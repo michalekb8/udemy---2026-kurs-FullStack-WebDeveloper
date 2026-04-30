@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td, table {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h3>Tabele</h3>
+    <table>
+        <caption>Przykładowa tabela</caption>
+        <thead>
+            <tr>
+                <th>Kolumna 1</th>
+                <th>Kolumna 2</th>
+                <th>Kolumna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td rowspan="2">2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td colspan="3">1</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Stopka 1</td>
+                <td>Stopka 2</td>
+                <td>Stopka 3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h4>Tabela 2</h4>
+    <table>
+        <colgroup>
+            <col span="1" style="background-color: violet;">
+            <col span="1" style="background-color: green;">
+            <col span="2" style="background-color: lightseagreen;">
+        </colgroup>
+        <tr>
+            <td>Wiersz 1</td>
+            <td>15</td>
+            <td>18</td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>Wiersz 2</td>
+            <td>34</td>
+            <td>53</td>
+            <td>87</td>
+        </tr>
+        <tr>
+            <td>Wiersz 3</td>
+            <td>45</td>
+            <td>44</td>
+            <td>112</td>
+        </tr>
+    </table>
+</body>
+</html>
