@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Używane będą najnowsze zmiany np. jeśli jest to samo w obu plikacj to style2 będzie używany-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style2.css" type="text/css">
+    <title>Document</title>
+
+    <!-- metoda style w znaczniku head niezalecana. Raczej tylko do testowania -->
+    <style>
+        article{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        p{
+            color: palegreen;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h3>Tytuł</h3>
+        <!-- metoda inline nie jest zalecana-->
+        <p style="color: black;">Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </article>
+</body>
+</html>
