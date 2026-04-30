@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Formularze</h4>
+    <form action="login.php" method="post">
+        <fieldset>
+            <legend>Logowanie</legend>
+            <p><label>Wpisz nazwę użytkownika: <input type="text" name="user_name" id="username" required></label></p>
+            <p><label>Wpisz hasło: <input type="password" name="password" id="password" required></label></p>
+            <p><button type="submit">Zaloguj</button></p>
+            <p><button type="reset">Wyczyść</button></p>
+        </fieldset>
+    </form>
+
+    <form action="register.asp" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Rejestracja</legend>
+            <input type="hidden" value="afsdfa" name="hidden_value">
+            <p><label for="user_name">Wpisz nazwę użytkownika:</label><input type="text" name="user_name" id="username" minlength="3" maxlength="30" required></p>
+            <p><label for="email">Wpisz email:</label><input type="email" name="email" id="email" required></p>
+            <p><label for="age">Podaj wiek:</label><input type="number" name="age" id="age" min="16" max="110" required></p>
+            <p><label for="password">Wpisz hasło:</label><input type="password" name="password" id="password" required></p>
+            <p><label for="confirm_password">Wpisz ponownie hasło:</label><input type="password" name="confirm_password" id="confirm_password" required></p>
+            <p><label for="description">Opis:</label><br><textarea name="description" id="description" cols="30" rows="10"></textarea></p>
+            <p><label for="avatar">Awatar:</label><input type="file" name="avatar" id="avatarimage" accept="image/png, image/jpeg"></p>
+            <p>
+                Ulubiony kolor:
+                <input type="radio" name="color" value="red" id="red">
+                <label for="red">Czerwony</label>
+                <input type="radio" name="color" value="blue" id="blue">
+                <label for="blue">Niebieski</label>
+                <input type="radio" name="color" value="green" id="green">
+                <label for="green">Zielony</label>
+            </p>
+            <p>
+                Lubiane marki:
+                <input type="checkbox" name="brands" value="mclaren" id="mclaren">
+                <label for="mclaren">Mclaren</label>
+                <input type="checkbox" name="brands" value="ferrari" id="ferrari">
+                <label for="ferrari">Ferrari</label>
+                <input type="checkbox" name="brands" value="porsche" id="porsche">
+                <label for="porsche">Porsche</label>
+            </p>
+            <p>
+                <input type="datetime-local" name="datetime" id="datetime">
+            </p>
+            <p>
+                <label for="car_color">Kolor auta</label>
+                <input type="color" name="car_color" id="car_color">
+            </p>
+            <p>
+                <label for="phone">Telefon</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789">
+            </p>
+            <p>
+                <label for="distance">Przebieg w tyś kilonetrów</label>
+                <input type="range" name="distance" id="distance" min="0" max="100" step="1">
+            </p>
+            <p>
+                <label for="url">Strona aukcji:</label>
+                <input type="url" name="url" id="url">
+            </p>
+            <p>
+                <label for="theme">Templatka forum:</label>
+                <select name="theme" id="theme">
+                    <option value="light">Jasny</option>
+                    <option value="dark">Ciemny</option>
+                    <option value="colorful">Kolorowy</option>
+                </select>
+            </p>
+
+            <p><button type="submit">Zarejestruj</button></p>
+            <p><button type="reset">Wyczyść</button></p>
+        </fieldset>
+    </form>
+</body>
+</html>
