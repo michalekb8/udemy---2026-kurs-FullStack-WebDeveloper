@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        [data-color]{
+            background-color: red;
+            border: 2px dotted darkred;
+            font-weight: bold;
+        }
+        [data-color="blue"]{
+            background-color: lightblue;
+            border: 2px dotted blue;
+        }
+
+        [data-green="light" i]{
+            background-color: lightgreen;
+        }
+
+        [data-green="dark" i]{
+            background-color: green;
+        }
+
+        [class *= "str"]{ /* Nieważne gdzie 'str' jest w klasie to zadziała nawet 'textstrbox' */
+            background-color: orange;
+        }
+
+        [class ~= "small-text"]{ /* tekst 'small-text' musi być oddzielony spacjami */
+            font-size: 10px;
+        }
+
+        [class ^= "small-text"]{ /* Tylko jeśli pierwwszą zdefiniowaną klasą jest 'small-text' */
+            border: 3px solid slateblue;
+        }
+
+        [class $= "box"]{ /* Tylko jeśli ostatnią zdefiniowaną klasą jest 'box' */
+            padding: 5px;
+            margin: 10px;
+        }
+
+        [class |= "TEST"]{ /* Kiedy klasy ssą dokładnie takie jak 'TEST' nawet wielkość liter */
+            padding-top: 50px;
+        }
+         
+    </style>
+</head>
+<body>
+    <div data-color>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, voluptas?</div>
+    <div class="small-text str box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, voluptas?</div>
+    <div data-green="light" class="TEST">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, voluptas?</div>
+    <div data-green="DaRk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, voluptas?</div>
+    <p data-color="blue">Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
