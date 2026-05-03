@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ::selection{
+            background-color: orange;
+        }
+        article::first-letter{
+            font-weight: bold;
+        }
+        article::first-line{
+            text-decoration: underline;
+        }
+        article::before{
+            content: "@";
+            border: 2px dotted red;
+        }
+        article:last-child::after{
+            content: "HOT";
+            font-size: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quod voluptas nisi sed maxime necessitatibus optio voluptatum eos officia expedita alias atque, quidem nesciunt inventore libero suscipit. Ipsum, fugiat est.</article>
+        <article>Beatae, necessitatibus soluta odit omnis inventore repudiandae corporis quae similique nam optio, reprehenderit consectetur vero velit. Nesciunt, error laudantium! Aliquam illum laborum id vitae nisi accusantium cupiditate quasi nulla vero.</article>
+        <article>Maxime provident esse possimus pariatur! Ratione animi nihil adipisci beatae temporibus cupiditate eius quo veniam voluptatibus velit impedit sunt neque, nisi quos dolorem sequi laboriosam quaerat et sapiente veritatis rerum!</article>
+        <article>Perferendis vitae culpa recusandae ea placeat porro nihil incidunt ullam ratione sequi consectetur sapiente nemo illum hic labore a, reiciendis ex! Odit quae soluta, eius nesciunt maiores placeat veniam dolorum.</article>
+        <article>Vero quis corrupti praesentium libero totam laboriosam ullam cupiditate laborum cum. Accusantium, voluptas rem. Doloribus necessitatibus, hic molestias expedita pariatur error ex vel consequuntur porro natus sapiente nam quod in.</article>
+        <article>Molestias quidem quas reiciendis itaque optio adipisci cum cumque debitis corrupti fugit quae nisi animi doloremque distinctio exercitationem, facilis magni sapiente laudantium officia aliquid voluptate! Reiciendis harum ab quos consequuntur.</article>
+    </div>
+</body>
+</html>
