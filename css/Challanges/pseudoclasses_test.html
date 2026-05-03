@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .send{
+            width: 100px;
+            background-color: red;
+            border: 3px solid black;
+            outline: none;
+            cursor: pointer;
+        }
+        .send:active{
+            font-weight: bold;
+        }
+        .send:hover{
+            background-color: orange;
+        }
+        .send:focus{
+            border: 3px solid coral;
+        }
+        .send:disabled{
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <button disabled class="send">lorem</button>
+        <button class="send">ipsum</button>
+        <button class="send">dolor</button>
+        <button class="send">sit</button>
+    </form>
+</body>
+</html>
