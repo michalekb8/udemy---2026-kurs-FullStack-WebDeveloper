@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border: 2px solid black;
+        }
+
+        span[class]{
+            background-color: aqua;
+        }
+        .uppercase{
+            text-transform: uppercase; /* Wszystko drukowanymi */
+        }
+
+        .capitalize{
+            text-transform: capitalize; /* Pierwsze litery drukowane */
+        }
+
+        .lowercase{
+            text-transform: lowercase; /* Wszystko małymi */
+        }
+
+        .underline{
+            text-decoration: underline; /* Podkreślenie */
+            text-decoration-style: dotted;
+            text-decoration-color:green;
+        }
+
+        .overline{ /* Kreska nad tekstem */
+            text-decoration: overline;
+        }
+
+        .line-through{ /* Przekreślenie */
+            text-decoration: line-through;
+        }
+
+        .align-right{
+            text-align: right;
+        }
+
+        .align-center{
+            text-align: center;
+        }
+
+        .justify{ /* Justowanie */
+            text-align: justify;
+        }
+
+        .lh34{
+            line-height: 180%;
+        }
+
+        .sub{
+            vertical-align: sub;
+        }
+
+        .sup{
+            vertical-align: super;
+        }
+
+        .indent{ /* WWcięcie w tekście */
+            text-indent: 3em;
+        }
+
+        .ws2em{
+            word-spacing: 2em;
+        }
+
+        .ls{
+            letter-spacing: .3em;
+        }
+
+        .shadow1{
+            text-shadow: 2px 3px 2px darkred;
+        }
+
+        .shadow2{
+            text-shadow: 3px 2px;
+        }
+    </style>
+</head>
+<body>
+    <p class="align-right">Lorem ipsum <span class="underline uppercase sup">dolor sit amet</span> consectetur.</p>
+    <p class="align-center">Lorem ipsum <span class="overline capitalize sub">dolor sit amet</span> consectetur.</p>
+    <p class="justify lh34 indent">Lorem ipsum <span class="line-through lowercase">DoLor SIT amet</span> consectetur. 
+        <span class="ws2em shadow2">Lorem ipsum dolor sit amet consectetur</span> adipisicing elit. Sed, deserunt?Lorem ipsum dolor,
+         sit amet <span class="ls shadow1">consectetur adipisicing elit.</span> Eligendi, ab.</p>
+</body>
+</html>
