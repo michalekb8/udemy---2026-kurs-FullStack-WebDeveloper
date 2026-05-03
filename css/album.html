@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row; /* row jest domyślne */
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image-box{
+            margin: 10px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .image-box:hover{
+            transform: scale(1.07);
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2025/09/27/15/48/to-stage-9858926_1280.jpg" alt="">
+            <div>Test</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2026/04/12/11/11/jonleong64-portrait-10222434_1280.jpg" alt="">
+            <div>Test</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2025/07/25/17/36/berry-tarts-9735441_1280.jpg" alt="">
+            <div>Test</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2026/01/02/13/04/zebra-10048351_1280.jpg" alt="">
+            <div>Test</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2026/02/14/12/44/rperucho-buildings-10122850_1280.jpg" alt="">
+            <div>Test</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2026/04/03/17/51/17-51-20-775_1280.jpg" alt="">
+            <div>Test</div>
+        </div>
+    </div>
+</body>
+</html>
