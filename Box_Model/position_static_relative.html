@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        position: static;
+        left: 100px; /* ignorowane bo nie działa dla static */
+      }
+
+      .box {
+        position: relative;
+        bottom: 100px;
+        left: 10%;
+        width: 10em;
+        height: 100px;
+        background-color: lightblue;
+        border: 2px solid black;
+        z-index: 2;
+      }
+
+      .box2 {
+        background-color: green;
+        left: 15%;
+        bottom: 150px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+      voluptates. Lorem ipsum dolor sit amet.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+      voluptates. Lorem ipsum dolor sit amet.
+    </p>
+    <div class="box">div</div>
+    <div class="box box2">div</div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias,
+      delectus? Lorem ipsum dolor sit amet.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias,
+      delectus? Lorem ipsum dolor sit amet.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias,
+      delectus? Lorem ipsum dolor sit amet.
+    </p>
+  </body>
+</html>
