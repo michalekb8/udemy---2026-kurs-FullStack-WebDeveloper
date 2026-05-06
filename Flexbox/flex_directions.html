@@ -9,6 +9,10 @@
         display: flex;
         flex-direction: row; /* column, row, row-reverse, column-reverse*/
         flex-wrap: wrap; /* nowrap, wrap, wrap-reverse */
+        justify-content: space-between; /* wyrównywanie w poziomie center, flex-start, flex-end, space-between, space-around, space-evenly*/
+        align-items: center; /* wyrównanie w pionie flex-start, flex-end, center, stretch (cała wysokość), baseline(na lini bazowej) */
+        border: 2px solid red;
+        height: 800px;
       }
 
       .container div {
@@ -18,6 +22,16 @@
         background-color: green;
         text-align: center;
         line-height: 50px;
+      }
+
+      div.h100 {
+        height: 100px;
+        background-color: orange;
+      }
+
+      div.h120 {
+        height: 120px;
+        background-color: red;
       }
     </style>
   </head>
@@ -29,8 +43,8 @@
       <div>3</div>
       <div>4</div>
       <div>5</div>
-      <div>6</div>
-      <div>7</div>
+      <div class="h100">6</div>
+      <div class="h120">7</div>
       <div>8</div>
       <div>9</div>
       <div>10</div>
