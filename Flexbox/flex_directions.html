@@ -9,7 +9,7 @@
         display: flex;
         flex-direction: row; /* column, row, row-reverse, column-reverse*/
         flex-wrap: wrap; /* nowrap, wrap, wrap-reverse */
-        justify-content: space-between; /* wyrównywanie w poziomie center, flex-start, flex-end, space-between, space-around, space-evenly*/
+        justify-content: center; /* wyrównywanie w poziomie center, flex-start, flex-end, space-between, space-around, space-evenly*/
         align-items: center; /* wyrównanie w pionie flex-start, flex-end, center, stretch (cała wysokość), baseline(na lini bazowej) */
 
         /* Odległości między poszczególnymi elementami */
@@ -40,14 +40,30 @@
         height: 120px;
         background-color: red;
       }
+
+      div:not([class]),
+      div.h100,
+      div.h120 {
+        order: 4;
+      }
+
+      .first {
+        order: 1;
+      }
+      .second {
+        order: 2;
+      }
+      .third {
+        order: 3;
+      }
     </style>
   </head>
 
   <body>
     <div class="container">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
+      <div class="third">1</div>
+      <div class="second">2</div>
+      <div class="first">3</div>
       <div>4</div>
       <div>5</div>
       <div class="h100">6</div>
